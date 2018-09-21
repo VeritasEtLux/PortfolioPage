@@ -1,0 +1,201 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+
+}
+
+html {
+
+	font-size: 10px;
+	overflow-x: hidden;
+
+}
+
+font-face {
+	font-family: oxygen;
+	src: url("fonts/Oxygen-Regular.ttf") format("truetype");
+}
+
+
+header {
+
+	height: 120vh;
+
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+main {
+
+	height: 120vh;
+	background-color: rgba(224, 74, 64);
+}
+
+nav {
+	height: 10%;
+	background: #e04a40;
+	display: block;
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+	transition: all ease .5s;
+
+
+
+}
+
+
+nav.shrink {
+	height: 7.5%;
+	transition: all ease .5s;
+	background: rgba(224, 74, 64, 0.3);
+}
+
+
+.buttons {
+	position: relative;
+	top: 27%;
+
+	cursor: pointer;
+
+
+}
+
+
+.strgl {
+
+	position: absolute;
+	right: 29%;
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 28px;
+	font-family: oxygen;
+}
+
+.strgl span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+
+}
+
+
+.omnie {
+	position: absolute;
+	right: 20%;
+
+	background-color: transparent;
+
+	color: #ffffff;
+	font-size: 28px;
+	font-family: oxygen;
+}
+
+.omnie span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.2s;
+}
+
+
+
+
+.kontakt {
+	position: absolute;
+	right: 10%;
+	background-color: transparent;
+	color: #ffffff;
+	text-align: center;
+	font-size: 28px;
+	font-family: oxygen;
+
+}
+
+.kontakt span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.2s;
+}
+
+@-webkit-keyframes flip-horizontal-bottom {
+	0% {
+		-webkit-transform: rotateX(0);
+		transform: rotateX(0);
+	}
+
+	50% {
+		-webkit-transform: rotateX(-180deg);
+		transform: rotateX(-180deg);
+	}
+
+	100% {
+		-webkit-transform: rotateX(0);
+		transform: rotateX(0);
+	}
+}
+
+@keyframes flip-horizontal-bottom {
+	0% {
+		-webkit-transform: rotateX(0);
+		transform: rotateX(0);
+	}
+
+	50% {
+		-webkit-transform: rotateX(-180deg);
+		transform: rotateX(-180deg);
+	}
+
+	100% {
+		-webkit-transform: rotateX(0);
+		transform: rotateX(0);
+	}
+}
+
+.strgl:hover span {
+
+	-webkit-animation: flip-horizontal-bottom 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: flip-horizontal-bottom 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+}
+
+
+
+.omnie:hover span {
+	-webkit-animation: flip-horizontal-bottom 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: flip-horizontal-bottom 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.kontakt:hover span {
+	-webkit-animation: flip-horizontal-bottom 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: flip-horizontal-bottom 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+
+#tlo {
+	width: 100%;
+	position: relative;
+	top: -18.5%;
+	left 0%;
+}
+
+#logo {
+
+	position: absolute;
+	top: 28%;
+	left: 38.7%;
+	height: 40vh;
+	z-index: +2;
+}
+
+#koncert {
+	position: absolute;
+	bottom: 0%;
+	font-size: 3rem;
+	font-family: oxygen;
+	color: #ffffff;
+	right: 0%;
+}
